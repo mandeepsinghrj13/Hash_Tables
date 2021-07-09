@@ -22,5 +22,5 @@ public class HashTable
         }
         //Display the linked list
         System.out.println(hashImpl);	
-	}
+}
 }

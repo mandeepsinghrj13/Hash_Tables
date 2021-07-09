@@ -48,8 +48,7 @@ public class Node<K, V>
 		{
 			 StringBuilder nodeString = new StringBuilder();
 		        nodeString.append("Node{" + "K=").append(key).append(" V=").append(value).append("}");
-		        if(next != null)
-		        	nodeString.append("->").append(next);
+		        if(next != null)nodeString.append("->").append(next);
 		     return nodeString.toString();
 		}
 }
