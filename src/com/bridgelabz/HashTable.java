@@ -1,10 +1,12 @@
 package com.bridgelabz;
+import java.util.Hashtable;
 public class HashTable
 {
 	public static void main(String[] args) 
 	{
 		HashtableImpl<String, Integer> hashImpl = new HashtableImpl();
-        String message = "To be or not to be";
+        String message = "Paranoids are not paranoid because they are paranoid but " +
+                "because they keep putting themselves deliberately into paranoid avoidable situations";
 
         //String to String[] conversion.
         String[] messageArray = message.toLowerCase().split(" ");
@@ -21,6 +23,11 @@ public class HashTable
             hashImpl.add(word , value);
         }
         //Display the linked list
-        System.out.println(hashImpl);	
+        System.out.println(hashImpl);
+        //Remove "avoidable" from the hashtable
+        hashImpl.remove("avoidable");
+
+        //Display the hashtable
+        System.out.println(hashImpl);
 }
 }
